@@ -146,6 +146,27 @@ class _login_screenState extends State<login_screen> {
                         Text("Google"),
                       ],
                     ),
+                  ),
+                  SizedBox(
+                    height: ScrernHeight / 50,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text('Don’t have an account?'),
+                      TextButton(
+                          onPressed: () {},
+                          child: Text(
+                              'Sign Up now',
+                            style: TextStyle(
+                              color: kSecondaryColor,
+                              fontWeight: FontWeight.w600
+                            ),
+                          )
+                      ),
+
+                    ],
                   )
                 ],
               ),
