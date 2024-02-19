@@ -38,8 +38,6 @@ class _cartItemsState extends State<cartItems> {
     }
     setState(() {
       print(total);
-      MyGlobals().total_amount = total;
-      print(MyGlobals().total_amount);
     });
     // updateTotalPrice(total);
   }
@@ -74,7 +72,7 @@ class _cartItemsState extends State<cartItems> {
     double width = MediaQuery.of(context).size.width;
     return SingleChildScrollView(
       child: SizedBox(
-        height: height/10*5,
+        height: height/10*3,
         width: width<900 ? width : width/2,
         child:  Center(
             child: currentItems.isNotEmpty

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled3/MyGlobals.dart';
 import 'package:untitled3/screens/cart/components/cart_item_header.dart';
 import 'package:untitled3/screens/cart/components/cart_items.dart';
+import 'package:untitled3/screens/cart/components/margin.dart';
 import 'package:untitled3/screens/cart/components/total_price.dart';
 import 'package:untitled3/screens/menu/components/menu_header.dart';
 
@@ -49,6 +50,7 @@ class _cartScreenState extends State<cartScreen> {
                 height: height / 30,
               ),
               cartItemHeader(),
+              margin(),
               SizedBox(
                 height: height / 30,
               ),
@@ -56,7 +58,8 @@ class _cartScreenState extends State<cartScreen> {
               SizedBox(
                 height: height / 30,
               ),
-              totalPrice()
+               margin(),
+               totalPrice()
             ],
           ),
         ),
