@@ -50,7 +50,7 @@ class _cartItemHeaderState extends State<cartItemHeader> {
         ? SizedBox(
             height: height / 15,
             width: width < 900 ? width : width / 2,
-            child: Center(
+            child: const Center(
               child: Padding(
                 padding: EdgeInsets.only(right: 25, left: 15),
                 child: Row(
