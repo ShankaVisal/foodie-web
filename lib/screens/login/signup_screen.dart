@@ -55,14 +55,14 @@ class _signUpPageState extends State<signUpPage> {
               children: [
                 ScreenWidth > 900 ?Expanded(
                     child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Image.asset(
-                    'assets/images/login.png',
-                    fit: BoxFit.contain,
-                    width: ScreenWidth / 2,
-                    height: ScreenHeight/5*4,
-                  ),
-                )):
+                      padding: const EdgeInsets.all(8.0),
+                      child: Image.asset(
+                        'assets/images/login.png',
+                        fit: BoxFit.contain,
+                        width: ScreenWidth / 2,
+                        height: ScreenHeight/5*4,
+                      ),
+                    )):
                 Container(),
                 Expanded(
                   child: Padding(
@@ -194,6 +194,9 @@ class _signUpPageState extends State<signUpPage> {
                   ),
                 )
               ],
+            ),
+            SizedBox(
+              height: ScreenHeight / 25,
             ),
             Footer(),
           ],
